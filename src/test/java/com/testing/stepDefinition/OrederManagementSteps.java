@@ -11,7 +11,7 @@ public class OrederManagementSteps {
     }
 
     @When("I enter active account {string} {string} {string} {string} {string}")
-    public void iEnterActiveAccount(String Firstname, String arg1, String arg2, String arg3, String arg4) {
+    public void iEnterActiveAccount(String Firstname, String Lastname, String Email, String Password, String ConfirmPassword) {
     }
 
     @And("I click on createe an account")

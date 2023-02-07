@@ -10,4 +10,4 @@ Feature: Account Management
 
     Examples:
       | Firstname | Lastname | Email                     | Password | ConfirmPassword |
-      | Michael   | Tester   | michael.tester@tester.com | !1Tester | !1Tester        |
+      | Michael   | Tester   | michael1.tester@tester.com | !1Tester | !1Tester        |
