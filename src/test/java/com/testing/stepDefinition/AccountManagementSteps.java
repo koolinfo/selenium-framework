@@ -41,4 +41,16 @@ public class AccountManagementSteps {
     @Then("My account page is displayed")
     public void myAccountPageIsDisplayed() {
     }
+
+    @Given("I am a registered customer")
+    public void iAmARegisteredCustomer() {
+    }
+
+    @And("I am on LoginPage")
+    public void iAmOnLoginPage() {
+    }
+
+    @And("I click on sign button")
+    public void iClickOnSignButton() {
+    }
 }
