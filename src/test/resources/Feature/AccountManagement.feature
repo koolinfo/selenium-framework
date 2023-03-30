@@ -16,12 +16,11 @@ Feature: Account Management
 
   @AccountLogin
   Scenario Outline: Registered Customer can Login in with UserName and Password
-    Given I am a registered customer
-    And I am on LoginPage
-    When I enter "<Firstname>" "<Lastname>" "<Email>" "<Password>" "<ConfirmPassword>"
-    And I click on sign button
+    Given I am on login Page
+    When I enter "<Email>" and "<Password>"
+    And I click on Login
     Then My account page is displayed
 
     Examples:
-      | Firstname | Lastname | Email                     | Password | ConfirmPassword |
-      | Michael   | Tester   | michael.tester@tester.com | !1Tester | !1Tester        |
+      | Email                     | Password |
+      | michael.tester@tester.com | !1Tester |

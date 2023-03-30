@@ -42,15 +42,18 @@ public class AccountManagementSteps {
     public void myAccountPageIsDisplayed() {
     }
 
-    @Given("I am a registered customer")
-    public void iAmARegisteredCustomer() {
-    }
 
-    @And("I am on LoginPage")
+
+    @Given("I am on login Page")
     public void iAmOnLoginPage() {
     }
 
-    @And("I click on sign button")
-    public void iClickOnSignButton() {
+    @When("I enter {string} and {string}")
+    public void iEnterAnd(String Email, String Password) {
+    }
+
+    @And("I click on Login")
+    public void iClickOnLogin() {
+
     }
 }
