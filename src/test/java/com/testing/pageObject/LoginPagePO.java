@@ -47,30 +47,6 @@ public class LoginPagePO {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    public void clickLoginPageLink() {
+    }
 }

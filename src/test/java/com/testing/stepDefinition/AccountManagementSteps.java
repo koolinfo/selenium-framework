@@ -3,6 +3,7 @@ package com.testing.stepDefinition;
 import com.testing.cucumber.Hooks;
 import com.testing.pageObject.CreateAccountPagePO;
 import com.testing.pageObject.HomePagePO;
+import com.testing.pageObject.LoginPagePO;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -46,14 +47,25 @@ public class AccountManagementSteps {
 
     @Given("I am on login Page")
     public void iAmOnLoginPage() {
+        LoginPagePO LoginPagePO = new LoginPagePO(driver);
+        LoginPagePO.clickLoginPageLink();
     }
 
     @When("I enter {string} and {string}")
     public void iEnterAnd(String Email, String Password) {
+        LoginPagePO LoginPagePO = new LoginPagePO(driver);
+        LoginPagePO.enterEmail(Email);
+        LoginPagePO.enterPassword(Password);
     }
 
     @And("I click on Login")
     public void iClickOnLogin() {
+        LoginPagePO LoginPagePO = new LoginPagePO(driver);
+        LoginPagePO.clickLoginPageLink();
 
+    }
+
+    @Then("My account page is displayed")
+    public void myAccountPageIsDisplayed() {
     }
 }
